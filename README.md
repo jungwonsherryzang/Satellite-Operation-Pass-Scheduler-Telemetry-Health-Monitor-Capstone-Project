@@ -27,7 +27,7 @@ For telemetry_monitor.sh: A UNIX-like terminal with awk, grep, tail, bc (standar
 
 ### ✍️ How to Use
 1. Run Satellite Pass Scheduler
-python pass.py
+python pass_scheduler.py
 
 Real Output(based on 06/01/2025)
 📡 Satellite: ISS (ZARYA)
