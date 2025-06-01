@@ -1,32 +1,31 @@
-🛰️ Satellite Pass Scheduler & Telemetry Health Monitor
+# 🛰️ Satellite Pass Scheduler & Telemetry Health Monitor
 A lightweight, real-world inspired satellite operations toolset that simulates a ground segment’s key responsibilities — from orbital pass prediction to real-time telemetry anomaly detection.
 
-🚀 Overview
+## 🚀 Overview
 This project contains two core components:
 
-📡 Satellite Pass Scheduler (pass_scheduler.py)
+## 📡 Satellite Pass Scheduler (pass_scheduler.py)
 A Python script that pulls live TLE data, calculates visible satellite passes (e.g., ISS) over a given location (like Tokyo), and prints predicted pass windows.
 
-🩺 Telemetry Health Monitor (telemetry_monitor.sh)
+## 🩺 Telemetry Health Monitor (telemetry_monitor.sh)
 A Bash script that simulates real-time telemetry checks from a log file and raises alerts for out-of-threshold temperature or power readings.
 
-🧠 Features
-✅ Satellite Pass Scheduler
+## 🧠 Features
+### ✅ Satellite Pass Scheduler
 Fetches real-time TLE data from Celestrak(https://celestrak.org/)
 Uses Skyfield to compute when a satellite will be visible from a target location
 Works with any TLE-compatible object (e.g., ISS, STRiX, Sentinel)
 
-
-✅ Telemetry Health Monitor
+### ✅ Telemetry Health Monitor
 Parses latest telemetry entry from a live log file
 Triggers warning alerts when temperature or power crosses thresholds
 Easily schedulable via cron every 5 minutes
 
-🔧 Requirements
+### 🔧 Requirements
 For pass.py: pip install skyfield pytz
 For telemetry_monitor.sh: A UNIX-like terminal with awk, grep, tail, bc (standard on most Linux/macOS)
 
-✍️ How to Use
+### ✍️ How to Use
 1. Run Satellite Pass Scheduler
 python pass.py
 
